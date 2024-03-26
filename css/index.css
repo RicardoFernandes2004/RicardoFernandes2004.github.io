@@ -6,7 +6,7 @@ body{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-image: url(https://www.melhoresdestinos.com.br/wp-content/uploads/2022/10/cidade-italiana-paga-despesas-turistas-capa.jpg);
+    background-color: rgb(74, 74, 74) ;
 }
 main{
     background-color: rgb(128, 128, 128) ;
