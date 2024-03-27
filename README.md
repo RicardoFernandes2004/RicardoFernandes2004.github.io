@@ -5,3 +5,11 @@ Após o header vem o main, que conta com 2 articles, Um com uma vitrine de produ
 O article para a vitrine de produtos contém uma div para a manipulação do h2 de título do vídeo e uma div para manipular os section usados para cada produto individual, com seu link a e sua img.
 O article de video contem um h2 como título, um p como descrição e uma div concatenando o iframe, para manipular a posição do vídeo.
 O footer contém apenas o article que contém a logo da Vinheria Agnello e um P contendo o copyright do site.
+
+
+Estrutura do produtos.html
+Primeiro entra a tag doctype html para declarar o tipo de arquivo, e a tag html.
+A tag head contém link para o CSS da página produtos localizado na pasta css/produtos.css, a tag title para definir o nome da página, e contém também as meta tags de author e viewport, usadas respectivamente para definir o autor da página e para deixar a página responsiva.
+O body contém primeiramente o header, que contém o h1 do título, e a nav, que por sua vez contém os links de navegação.
+Depois do header, temos o main, que possui 3 section, com cada uma servindo para apresentar os produtos de um certo tipo de vinho, que nesse caso escolhemos o tinto, o branco e o rosé. Dentro de cada section, colocamos 3 article, com cada um deles contendo o nome do produto, seu preço e uma foto do respectivo vinho.  
+Portanto, a página produtos apresentas 3 tipos de vinhos (tinto, branco e rosé), e para cada tipo temos 3 opções de compra, apresentando seu nome, preço e foto.
