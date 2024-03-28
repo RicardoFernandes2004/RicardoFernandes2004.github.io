@@ -1,4 +1,9 @@
-Grupo: Ricardo Fernandes, André Yoshimori, Kauã Soares, Dayana Quispe e Bruno Macedo
+Grupo: 
+Ricardo Fernandes RM - 554597
+André Yoshimori RM - 
+Kauã Soares RM - 559044
+Dayana Quispe RM - 558023
+Bruno Macedo RM - 557973
 
 
 Estrutura do index.html<br>
