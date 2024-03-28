@@ -1,3 +1,6 @@
+Grupo: Ricardo Fernandes, André Yoshimori, Kauã Soares, Dayana Quispe e Bruno Macedo
+
+
 Estrutura do index.html<br>
 Primeiro entra a tag doctype html para declarar o tipo de arquivo, a tag html, A tag head contém link para o CSS do próprio index localizado na pasta css/index.css, a tag title para definir o nome da página, contem a tag meta do charset para defini-lo como UTF-8, possibilitando o uso de caracteres especiais, contem também as meta tags de author e viewport, usadas respectivamente para definir o autor da página e para deixar a página responsiva. 
 O body contém primeiramente o header, que contém a nav, que por sua vez contém os links de navegação do site e a logo da empresa juntamente do h1 de título.<br>
