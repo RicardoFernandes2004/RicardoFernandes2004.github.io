@@ -1,8 +1,13 @@
 Grupo: 
+
 Ricardo Fernandes RM - 554597
-André Yoshimori RM - 
+
+André Yoshimori RM -  
+
 Kauã Soares RM - 559044
+
 Dayana Quispe RM - 558023
+
 Bruno Macedo RM - 557973
 
 
