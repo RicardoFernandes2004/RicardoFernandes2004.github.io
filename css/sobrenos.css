@@ -16,6 +16,11 @@ header nav{
     align-items: center;
     color: #e7bd70;
     background-color: #131313;
+    transition: 0.3s;
+}
+
+header nav:hover {
+    transform: scale(1.01);
 }
 
 header nav h1{
@@ -35,11 +40,24 @@ header nav #opcoes_menu ul li{
     list-style: none;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
+    transition: 0.3s;
+    border: #000000 none 1px;
+    text-align: center;
+}
+
+header nav #opcoes_menu ul li:hover{
+    border: #6c6c6c solid 1px;
+    border-radius: 5px;
+    background-color: #6c6c6c;
 }
 
 header nav #opcoes_menu a{
     text-decoration: none;
     color: inherit;
+}
+
+#opcoes_menu ul li a:hover {
+    color: blue;
 }
 
 h1 {

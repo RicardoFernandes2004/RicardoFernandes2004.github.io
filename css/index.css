@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+a:visited{
+    color: #e7bd70;
+}
 body{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -19,6 +22,13 @@ header nav{
     align-items: center;
     color: #e7bd70;
     background-color: #131313;
+    transition: 0.3s;
+    
+}
+
+header nav:hover {
+    transform: scale(1.01);
+    
 }
 
 header nav h1{
@@ -38,12 +48,26 @@ header nav #opcoes_menu ul li{
     list-style: none;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
+    transition: 0.3s;
+    border: #000000 none 1px;
+    text-align: center;
+}
+
+header nav #opcoes_menu ul li:hover{
+    border: #6c6c6c solid 1px;
+    border-radius: 5px;
+    background-color: #6c6c6c;
 }
 
 header nav #opcoes_menu a{
     text-decoration: none;
     color: inherit;
 }
+
+#opcoes_menu ul li a:hover {
+    color: blue;
+}
+
 
 .produtosExemplos #containerProdutos{
     display: flex;
@@ -74,6 +98,10 @@ header nav #opcoes_menu a{
     border: 5px solid #131313;
     border-radius: 10px;
     width: 300px;
+    transition: 0.3s;
+}
+.vinho_individual:hover{
+    transform: scale(1.02);
 }
 
 .produtosExemplos #containerProdutos .vinho_individual > img{
@@ -115,6 +143,11 @@ header nav #opcoes_menu a{
     height: 300px;
     max-width: 800px;
     margin: 0 auto;
+    transition: 0.3s;
+}
+
+.video > .video_container:hover{
+    transform: scale(1.1);
 }
 
 
