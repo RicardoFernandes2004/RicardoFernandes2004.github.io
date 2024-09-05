@@ -1,87 +1,219 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ricardo Fernandes de Aquino">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Vinheria Agnello</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+    <title>Página Inicial</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header> 
-        <nav class="navegation_bar">       
-            <img src="img/Logótipo Preto e Dourado Círculo Imobiliária.png" alt="logo Vinheria Agnello">
-            <h1>Vinheria Agnello</h1> 
-            <div id="opcoes_menu">
-                <ul>
-                    <li><a href="paginas/produtos.html">Produtos</a></li>
-                    <li><a href="paginas/galeria.html">Galeria</a></li>
-                    <li><a href="paginas/sobrenos.html">Sobre</a></li>
-                    <li><a href="paginas/Contato.html">Contatos</a></li>
-                </ul>
-            </div>
-        </nav>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light" >
+        <a class="navbar-brand" href="#">
+            <img src="assets/Mask group.png" alt="Logo">
+        </a>
+        <span class="navbar-text logoName">EcoTrend</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="paginas/categorias.html">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="paginas/contato.html">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> </a></li>
+                <!-- <img src="assets/shopping-cart.png" alt="cart" style="width: 30px; height: 30px;"> imagem do carrinhho -->
+            </ul>
+        </div>
     </header>
 
     <main>
-        <article class="produtosExemplos">
-            <div class="container_info">
-                <h2>Nossos produtos</h2>
-            </div>
-            <div id="containerProdutos">
-                <section class="vinho_individual">
-                    <a href="paginas/produtos.html"><h4>Vinhos tintos</h4></a>
-                    <img src="img/kisspng-red-wine-dessert-wine-white-wine-liqueur-red-wine-5a99440cacf373.9623744215199938687084.png" alt="Vinho tinto">
-                </section>
-
-                <section class="vinho_individual">
-                    <a href="paginas/produtos.html"><h4>Vinhos brancos</h4></a>
-                    <img id="vinho_branco" src="img/kisspng-white-wine-red-wine-liqueur-shangri-la-tibetan-buddhism-dry-white-wine-5a88bd8e278ac8.109636441518910862162.png" alt="Vinho branco">
-                </section>
-
-                <section class="vinho_individual">
-                    <a href="paginas/produtos.html"><h4>Vinhos rosés</h4></a>
-                    <img id="vinho_rose" src="img/kisspng-red-wine-ros-wine-cocktail-dessert-wine-5b384443645a66.3051992715304141474111.png" alt="Vinho rosé">
-                </section>
-            </div>
-            <div class="container_info">
-                <a id="veja_mais" href="paginas/produtos.html"><h3>Veja mais!</h3></a>
-            </div>
-        </article>
-
-        <article>
-            <section class="video">
-                <h2>Quer saber como funciona a produção do vinho?</h2>
-                <p>Veja no video abaixo do canal Vinologia!</p>
-                <div class="video_container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PZqWAZCGXjI?si=fLdjURGp6drdBhhL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Primeiro vídeo -->
+                <div class="carousel-item active">
+                    <video class="d-block w-100" autoplay muted loop>
+                        <source src="assets/videoplayback (1).mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5.
+                    </video>
                 </div>
-            </section>
-            <section class="historia">
-                <h2>A historia do vinho</h2>
-                <p>A história do vinho tem grande importância histórica, pois o seu surgimento em tempos remotos tornou-o um produto que acompanhou grande parte da evolução econômica e sociocultural de várias civilizações ocidentais e orientais.
-                    O vinho possui uma longínqua importância histórica e religiosa e remonta diversos períodos da humanidade. Cada cultura conta seu surgimento de uma forma diferente. Os cristãos, embasados no Antigo Testamento, acreditam que foi Noé quem plantou um vinhedo e com ele produziu o primeiro vinho do mundo ("E começou Noé a cultivar a terra e plantou uma vinha." Gênesis, capítulo 9, versículo 20). Já os gregos consideraram a bebida uma dádiva dos deuses. Hititas, babilônicas, sumérias, as histórias foram adaptadas de acordo com a tradição e crença do povo sob perspectiva.
-                    Do ponto de vista histórico, sua origem precisa é impossível, pois o vinho nasceu antes da escrita. Os enólogos dizem que a bebida surgiu por acaso, talvez por um punhado de uvas amassadas esquecidas num recipiente, que sofreram posteriormente os efeitos da fermentação. Mas o cultivo das videiras para a produção do vinho só foi possível quando os nômades se tornaram sedentários. Existem referências que indicam a Geórgia como o local onde provavelmente se produziu vinho pela primeira vez, sendo que foram encontradas neste local graínhas datadas entre 8000 a.c. e 5000 a.c.</p>
-            </section>
-        </article>
+                <!-- Segundo vídeo -->
+                <div class="carousel-item">
+                    <video class="d-block w-100" autoplay muted loop>
+                        <source src="assets/videoplayback.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5.
+                    </video>
+                </div>
+                <!-- Terceiro vídeo -->
+                <div class="carousel-item">
+                    <video class="d-block w-100" autoplay muted loop>
+                        <source src="assets/Summiting the Matterhorn with an FPV Drone.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5.
+                    </video>
+                </div>
+            </div>
+            <!-- Texto sobreposto ao carrossel -->
+            <div class="carousel-caption">
+                <h1>EcoTrend</h1>
+                <p>Seu Destino para Produtos Sustentáveis e Conscientes</p>
+            </div>
+        </div>
+        <div id="cardCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Primeiro slide com 3 cards -->
+                <div class="carousel-item active">
+                    <div class="card">
+                        <img src="assets/14c7060b11d3761ebc97f9b6e7bbc0ec.jpg" class="card-img-top" alt="Imagem 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Luz Econômica</h5>
+                            <p class="card-text"><s>R$30.00</s> R$15.00</p>
+                            <a href="#" class="btn btn-custom">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/lampadaledeconomica.jpg" class="card-img-top" alt="Imagem 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Lampada Led Economica</h5>
+                            <p class="card-text"><s>R$25.00</s> R$15.00</p>
+                            <a href="#" class="btn btn-custom">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/lampadaEconomicaAvant.jpg" class="card-img-top" alt="Imagem 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Lampada Economica Avant</h5>
+                            <p class="card-text"><s>R$34.25</s> R$32.99</p>
+                            <a href="#" class="btn btn-custom">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segundo slide com 3 cards -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="/assets/b45279c34b87a16d370e3dadbb9db8af.jpg" class="card-img-top" alt="Imagem 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Creme hidratante</h5>
+                            <p class="card-text"><s>R$70.00</s> R$65.90</p>
+                            <a href="#" class="btn btn-custom">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/oleo.jpg" class="card-img-top" alt="Imagem 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Óleo vegetal</h5>
+                            <p class="card-text"><s>R$42.52</s> R$24.98</p>
+                            <a href="#" class="btn btn-custom">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/snack-natural-50-p0bwbn6vki.webp" class="card-img-top" alt="Imagem 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Snack Sabor Natural</h5>
+                            <p class="card-text"><s>R$18.98</s> R$12.32</p>
+                            <a href="#" class="btn btn-custom">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Terceiro slide com 3 cards -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="assets/1c8df42cdf71709d096513069b547de8.jpg" class="card-img-top" alt="Imagem 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Vestido de Primavera</h5>
+                            <p class="card-text"><s>R$169.90</s> R$129.90</p>
+                            <a href="#" class="btn btn-custom">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/conjunto natural2.jpg" class="card-img-top" alt="Imagem 8">
+                        <div class="card-body">
+                            <h5 class="card-title">Conjunto de Verão</h5>
+                            <p class="card-text"><s>R$249.90</s> R$199.90</p>
+                            <a href="#" class="btn btn-custom">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/Casaco-frio-feminino-de-inverno-jaqueta-de-raposa-para-mulheres-roupas-naturais-reais-de-pele-de.webp" class="card-img-top" alt="Imagem 9">
+                        <div class="card-body">
+                            <h5 class="card-title">Casaco de Inverno</h5>
+                            <p class="card-text"><s>R$900.00</s> R$799.90</p>
+                            <a href="#" class="btn btn-custom">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controles do carrossel -->
+            <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div id="info">
+            <div class="jumbotron text-center">
+                <h1 class="display-4">EcoTrend</h1>
+                <p class="lead">EcoTrend surgiu da paixão de três amigos por sustentabilidade e inovação tecnológica. Em 2019, enquanto cursavam engenharia ambiental na universidade, Ana, João, e Carlos se uniram com o desejo de criar algo que realmente fizesse a diferença no mundo. Todos compartilhavam uma visão comum: aproveitar a tecnologia para proteger o meio ambiente e promover práticas sustentáveis no dia a dia das pessoas.
 
-
+                    Início Modesto, Grande Visão
+                    
+                    A ideia inicial era simples, mas poderosa: desenvolver produtos acessíveis que ajudassem as pessoas a reduzir seu impacto ambiental sem comprometer o conforto ou a conveniência. Começaram em um pequeno galpão emprestado, onde trabalhavam incansavelmente durante as noites e fins de semana. Após meses de pesquisa e desenvolvimento, criaram seu primeiro produto: um dispositivo inteligente de economia de água que monitorava o consumo e enviava alertas em tempo real para evitar o desperdício.
+                    
+                    Primeiros Desafios e Crescimento
+                    
+                    No começo, a EcoTrend enfrentou vários desafios. Convencer investidores e consumidores sobre a importância da sustentabilidade era uma tarefa árdua. No entanto, eles nunca desistiram. Em 2020, após um pitch inovador em uma feira de tecnologia, ganharam o primeiro prêmio por inovação sustentável, que impulsionou a empresa para o reconhecimento nacional.
+                    
+                    Com o prêmio, vieram os primeiros investimentos significativos, permitindo que a EcoTrend expandisse sua linha de produtos. Não só introduziram novas soluções para economia de água, mas também lançaram uma série de sensores inteligentes que ajudavam a monitorar a qualidade do ar, detectar poluição sonora, e até prever eventos climáticos extremos. Cada produto era desenhado com o objetivo de ser intuitivo, acessível, e, acima de tudo, eficaz.
+                    
+                    Transformando Desafios em Oportunidades
+                    
+                    Quando a pandemia de 2020 atingiu o mundo, a EcoTrend viu uma oportunidade de reforçar sua missão. Eles rapidamente adaptaram suas operações para apoiar comunidades locais, fornecendo tecnologias de monitoramento ambiental que ajudavam a garantir que os espaços públicos fossem seguros e sustentáveis. Esse esforço solidificou a reputação da EcoTrend como não apenas uma empresa de tecnologia, mas um verdadeiro parceiro comunitário comprometido com o bem-estar coletivo.
+                    
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <article class="rodape">
-            <section class="logo">
-                <img src="img/Logótipo Preto e Dourado Círculo Imobiliária.png" alt="Logo Vinheria Agnello">
-            </section>
-            <section class="direitos_reservados">
-                <p>Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use.</p>
-            </section>
-        </article>
+    <footer class="text-white pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <h5>Contato</h5>
+                    <ul class="list-unstyled">
+                        <li class="text-white">Email: ecotrend@ecotrend.com</li>
+                        <li class="text-white">Telefone: (11) 99999-9999</li>
+                        <li class="text-white">Endereço: Rua Paralela, 202</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h5>Siga-nos</h5>
+                    <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+                    <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i> Twitter</a><br>
+                    <a href="#" class="text-white mr-2"><i class="fab fa-instagram"></i> Instagram</a><br>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h5>Sobre a EcoTrend</h5>
+                    <p>
+                        Somos um e-commerce especializado em produtos sustentáveis e ecológicos, focado em promover um estilo de vida mais consciente e sustentável. Oferecemos uma ampla gama de produtos que respeitam o meio ambiente e contribuem para um futuro mais verde.
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2024 EcoTrend. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>

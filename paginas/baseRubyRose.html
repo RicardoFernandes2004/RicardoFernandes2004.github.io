@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrend</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .btn-back {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light" >
+        <a class="navbar-brand" href="/index.html">
+            <img src="/assets/Mask group.png" alt="Logo">
+        </a>
+        <span class="navbar-text logoName">EcoTrend</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="paginas/categorias.html">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="paginas/contato.html">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> </a></li>
+                <img src="/assets/shopping-cart.png" alt="cart" style="width: 30px; height: 30px;">
+            </ul>
+        </div>
+    </header>
+
+
+
+
+<div class="container mt-5">
+    <!-- Botão de Voltar -->
+    <a href="/paginas/categorias.html" class="btn btn-back mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+        </svg>
+        Voltar
+    </a>
+
+    <!-- Detalhes do Produto -->
+    <div class="row">
+        <div class="col-md-6">
+            <img src="data:image/jpeg;base64,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" style="width: 500px; height:400px" alt="Imagem do Produto" class="product-image">
+        </div>
+        <div class="col-md-6">
+            <h1 class="display-4">Base Natural - Marca RubyRose</h1>
+            <p class="lead">Preço: R$ 70,00</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula dolor id sapien tincidunt, non facilisis ligula efficitur. Nulla facilisi. Sed fringilla justo nec nisi feugiat, vel gravida est bibendum. Morbi efficitur, nunc et vulputate convallis, odio arcu vehicula metus, ut sollicitudin est justo eu leo. Curabitur non felis eu odio varius vestibulum. Donec vehicula magna at ipsum sagittis, in sagittis neque tincidunt. Pellentesque in tincidunt orci.</p>
+            <button class="btn btn-success btn-lg">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+</div>
+
+<footer class="text-white pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <h5>Contato</h5>
+                <ul class="list-unstyled">
+                    <li class="text-white">Email: ecotrend@ecotrend.com</li>
+                    <li class="text-white">Telefone: (11) 99999-9999</li>
+                    <li class="text-white">Endereço: Rua Paralela, 202</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h5>Siga-nos</h5>
+                <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+                <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i> Twitter</a><br>
+                <a href="#" class="text-white mr-2"><i class="fab fa-instagram"></i> Instagram</a><br>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h5>Sobre a EcoTrend</h5>
+                <p>
+                    Somos um e-commerce especializado em produtos sustentáveis e ecológicos, focado em promover um estilo de vida mais consciente e sustentável. Oferecemos uma ampla gama de produtos que respeitam o meio ambiente e contribuem para um futuro mais verde.
+                </p>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="mb-0">&copy; 2024 EcoTrend. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

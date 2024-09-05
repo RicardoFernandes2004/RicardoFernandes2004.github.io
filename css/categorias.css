@@ -1,0 +1,27 @@
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.btn-add-to-cart {
+    background-color: green;
+    color: white;
+}
+
+/* Estilos para responsividade */
+@media (max-width: 768px) {
+    .container-grid {
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+@media (max-width: 360px) {
+    .container-grid {
+        grid-template-columns: 1fr;
+    }
+}

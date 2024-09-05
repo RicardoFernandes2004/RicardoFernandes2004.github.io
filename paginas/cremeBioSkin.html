@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrend</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .btn-back {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light" >
+        <a class="navbar-brand" href="/index.html">
+            <img src="/assets/Mask group.png" alt="Logo">
+        </a>
+        <span class="navbar-text logoName">EcoTrend</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="paginas/categorias.html">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="paginas/contato.html">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> </a></li>
+                <img src="/assets/shopping-cart.png" alt="cart" style="width: 30px; height: 30px;">
+            </ul>
+        </div>
+    </header>
+
+
+
+
+<div class="container mt-5">
+    <!-- Botão de Voltar -->
+    <a href="/paginas/categorias.html" class="btn btn-back mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+        </svg>
+        Voltar
+    </a>
+
+    <!-- Detalhes do Produto -->
+    <div class="row">
+        <div class="col-md-6">
+            <img src="data:image/jpeg;base64,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" style="width: 500px; height:400px" alt="Imagem do Produto" class="product-image">
+        </div>
+        <div class="col-md-6">
+            <h1 class="display-4">Creme Hidratante - Marca BioSkin</h1>
+            <p class="lead">Preço: R$ 60,00</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula dolor id sapien tincidunt, non facilisis ligula efficitur. Nulla facilisi. Sed fringilla justo nec nisi feugiat, vel gravida est bibendum. Morbi efficitur, nunc et vulputate convallis, odio arcu vehicula metus, ut sollicitudin est justo eu leo. Curabitur non felis eu odio varius vestibulum. Donec vehicula magna at ipsum sagittis, in sagittis neque tincidunt. Pellentesque in tincidunt orci.</p>
+            <button class="btn btn-success btn-lg">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+</div>
+
+<footer class="text-white pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <h5>Contato</h5>
+                <ul class="list-unstyled">
+                    <li class="text-white">Email: ecotrend@ecotrend.com</li>
+                    <li class="text-white">Telefone: (11) 99999-9999</li>
+                    <li class="text-white">Endereço: Rua Paralela, 202</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h5>Siga-nos</h5>
+                <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+                <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i> Twitter</a><br>
+                <a href="#" class="text-white mr-2"><i class="fab fa-instagram"></i> Instagram</a><br>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h5>Sobre a EcoTrend</h5>
+                <p>
+                    Somos um e-commerce especializado em produtos sustentáveis e ecológicos, focado em promover um estilo de vida mais consciente e sustentável. Oferecemos uma ampla gama de produtos que respeitam o meio ambiente e contribuem para um futuro mais verde.
+                </p>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="mb-0">&copy; 2024 EcoTrend. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

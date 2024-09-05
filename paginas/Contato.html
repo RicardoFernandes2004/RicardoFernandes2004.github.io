@@ -1,114 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="kaua">
-    <link rel="stylesheet" href="/css/contato.css">
-    <title>Fale Conosco</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
+    <title>Contato - EcoTrend</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-
 <body>
-    <header>
-        <nav class="navegation_bar">
-            <img src="/img/Logótipo Preto e Dourado Círculo Imobiliária.png"
-                alt="logo Vinheria Agnello">
-            <h1>Vinheria Agnello</h1>
-            <div id="opcoes_menu">
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="sobrenos.html">Sobre</a></li>
-                </ul>
-            </div>
-        </nav>
+
+    <header class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/index.html">
+            <img src="../assets/Mask group.png" alt="Logo">
+        </a>
+        <span class="navbar-text logoName">EcoTrend</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../categorias.html">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
     </header>
 
-    <main>
-        <section class="Formulario">
-            <form>
-                <fieldset>
-                    <legend><b>Fale conosco</b></legend>
-                    <br>
-                    <div class="Nome">
-                        <label><b>Nome completo:</b></label>
-                        <input type="text">
-                    </div>
-                    <br><br>
-                    <div class="Email">
-                        <label><b>Email:</b></label>
-                        <input type="text">
-                    </div>
-                    <br><br>
-                    <div class="Endereço">
-                        <label><b>Endereço:</b></label>
-                        <input type="text">
-                    </div>
-                    <br><br>
-                    <div class="data_nascimento">
-                        <label><b>Data de Nascimento:</b></label>
-                        <input type="date">
-                    </div>
-                    <br><br>
-                    <div class="Sexo">
-                        <label><b>Sexo:</b></label>
-                        <input type="radio" name="genero">
-                        <label>Feminino</label>
-                        <input type="radio" name="genero">
-                        <label>Masculino</label>
-                    </div>
-                    <br><br>
-                    <div class="Telefone">
-                        <label><b>Telefone:</b></label>
-                        <input type="number">
-                    </div>
-                    <br><br>
-                    <div class="Assunto">
-                        <label><b>Assunto:</b></label>
-                        <input type="text">
-                    </div>
-                    <br><br>
-                    <div class="Mensagem">
-                        <label><b>Mensagem:</b></label>
-                        <textarea rows="4" cols="50"></textarea>
-                    </div>
-                </fieldset>
-            </form>
-        </section>
-        <section class="Contato">
-            <article>
-                <h1>Contatos</h1>
-                <br>
-                <h2>Você pode sempre contar com a gente. Se tiver dúvidas ou precisar de informações, é só entrar em contato.</h2>
-                <h3>Whatsapp: +55 11 95647-5337</h3>
-                <h3>Endereço: Rua das Flores, 115</h3>
-                <h3>E-mail: contato@vinheriaagnello.com</h3>
-            </article>
-        </section>
+    <main class="container my-5">
+        <h1 class="text-center">Entre em Contato</h1>
+        <p class="text-center">Preencha o formulário abaixo e entraremos em contato com você o mais rápido possível.</p>
+
+        <form action="#" method="POST" class="mx-auto" style="max-width: 600px;">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" class="form-control" placeholder="Seu nome completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" placeholder="Seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <input type="text" class="form-control" placeholder="Assunto da mensagem" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="form-control" rows="5" placeholder="Sua mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Enviar</button>
+        </form>
     </main>
 
-    <footer>
-        <article class="rodape">
-            <section class="logo">
-                <img src="/img/Logótipo Preto e Dourado Círculo Imobiliária.png"
-                    alt="Logo Vinheria Agnello">
-            </section>
-            <section class="direitos_reservados">
-                <p>Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use"
-                    for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair
-                    use is a use permitted by copyright statute that might otherwise be infringing. Non-profit,
-                    educational or personal use tips the balance in favor of fair use.</p>
-            </section>
-        </article>
+    <footer class="text-white pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: ecotrend@ecotrend.com</li>
+                        <li>Telefone: (11) 99999-9999</li>
+                        <li>Endereço: Rua Paralela, 202</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Siga-nos</h5>
+                    <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+                    <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i> Twitter</a><br>
+                    <a href="#" class="text-white mr-2"><i class="fab fa-instagram"></i> Instagram</a><br>
+                </div>
+                <div class="col-md-4">
+                    <h5>Sobre a EcoTrend</h5>
+                    <p>Somos um e-commerce especializado em produtos sustentáveis e ecológicos, focado em promover um estilo de vida mais consciente e sustentável.</p>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2024 EcoTrend. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
-</body>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
 </html>

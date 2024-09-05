@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrend</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .btn-back {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light" >
+        <a class="navbar-brand" href="/index.html">
+            <img src="/assets/Mask group.png" alt="Logo">
+        </a>
+        <span class="navbar-text logoName">EcoTrend</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="paginas/categorias.html">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="paginas/contato.html">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> </a></li>
+                <img src="/assets/shopping-cart.png" alt="cart" style="width: 30px; height: 30px;">
+            </ul>
+        </div>
+    </header>
+
+
+
+
+<div class="container mt-5">
+    <!-- Botão de Voltar -->
+    <a href="/paginas/categorias.html" class="btn btn-back mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+        </svg>
+        Voltar
+    </a>
+
+    <!-- Detalhes do Produto -->
+    <div class="row">
+        <div class="col-md-6">
+            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Produto de Beleza 3">
+        </div>
+        <div class="col-md-6">
+            <h1 class="display-4">Máscara Capilar - SimpleMask</h1>
+            <p class="lead">Preço: R$ 75,00</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula dolor id sapien tincidunt, non facilisis ligula efficitur. Nulla facilisi. Sed fringilla justo nec nisi feugiat, vel gravida est bibendum. Morbi efficitur, nunc et vulputate convallis, odio arcu vehicula metus, ut sollicitudin est justo eu leo. Curabitur non felis eu odio varius vestibulum. Donec vehicula magna at ipsum sagittis, in sagittis neque tincidunt. Pellentesque in tincidunt orci.</p>
+            <button class="btn btn-success btn-lg">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+</div>
+
+<footer class="text-white pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <h5>Contato</h5>
+                <ul class="list-unstyled">
+                    <li class="text-white">Email: ecotrend@ecotrend.com</li>
+                    <li class="text-white">Telefone: (11) 99999-9999</li>
+                    <li class="text-white">Endereço: Rua Paralela, 202</li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h5>Siga-nos</h5>
+                <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+                <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i> Twitter</a><br>
+                <a href="#" class="text-white mr-2"><i class="fab fa-instagram"></i> Instagram</a><br>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h5>Sobre a EcoTrend</h5>
+                <p>
+                    Somos um e-commerce especializado em produtos sustentáveis e ecológicos, focado em promover um estilo de vida mais consciente e sustentável. Oferecemos uma ampla gama de produtos que respeitam o meio ambiente e contribuem para um futuro mais verde.
+                </p>
+            </div>
+        </div>
+        <hr class="bg-white">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="mb-0">&copy; 2024 EcoTrend. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

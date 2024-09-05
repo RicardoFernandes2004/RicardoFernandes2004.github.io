@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F0E8E3;
+    /* rgb(255, 239, 216); cor usada antes */
+    /* display: grid;
+    grid-template-areas: 
+    "header header header"
+
+    ". . .";
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(6,1fr); */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+header{
+    grid-area: header;
+    background-color: #42866D
+}
+
+footer{
+    grid-area: footer;
+    background-color: #42866D;
+    color: white;
+    margin-top: auto;
+}
+.logoName{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+footer hr {
+    border: 0; 
+    height: 4px; 
+    background-color: white; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+}
+.carousel-item {
+    /* display: flex; */
+    justify-content: center;
+}
+ .card {
+    background-color: blanchedalmond;
+    margin: 10px;
+    width: 270px; 
+}
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+} 
+#cardCarousel, .carousel_inner{
+    width: 300px;
+}
+
+.btn-custom {
+    background-color: green;
+    color: white;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.carousel-caption h1 {
+    font-size: 6rem;
+    font-weight: bold;
+}
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "video video"
+    "carousel info";
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(1,1fr); 
+}
+
+#carouselExampleFade{
+    grid-area: video;
+    margin: 20px;
+}
+#cardCarousel{
+    grid-area: carousel;
+    margin: 20px;
+}
+
+#info{
+    grid-area: info;
+    margin: 20px;
+}
+
+.info{
+    grid-area: info;
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+button[type="submit"] {
+    background-color: #42866D;
+    color: white;
+    font-size: 18px;
+}
+
+form button[type="submit"]:hover {
+    background-color: #356d53;
+}
+
+.jumbotron {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente */
+    color: white;
+    text-align: center;
+  }
+
+  .jumbotron .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .jumbotron video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+@media screen and (max-width: 496px) {
+    .logoName{
+    font-size: 17px;
+    font-weight: bold;
+
+    }
+
+    .navbar-nav .nav-link {
+    font-size: 14px;
+    }
+
+    footer .row > div {
+    margin-bottom: 20px;
+    text-align: center;
+    }
+
+    footer .row > div.col-md-4 {
+    width: 100%;
+    }
+
+    i.fab {
+    font-size: 24px;
+    }
+
+    footer h5 {
+    font-size: 18px;
+    }
+
+header{
+    /* background-color: #E5FFD1; */
+    z-index: 1000;
+}
+.card_image_top{
+    height: 400px;
+}
+.info{
+    display: none;
+}
+.card {
+    background-color: blanchedalmond;
+    margin: 10px;
+    width: 270px; 
+}
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "video"
+    "carousel"
+    "info";
+    grid-template-columns: 0.25fr ;
+    grid-template-rows: repeat(1,0.25fr); 
+}
+
+#carouselExampleFade{
+    grid-area: video;
+    margin: 0;
+    /* width: 280px; */
+}
+#cardCarousel{
+    grid-area: carousel;
+    margin: 0;
+}
+
+#info{
+    grid-area: info;
+    margin: 0;
+}
+
+.jumbotron{
+    /* width: 280px; */
+}
+
+
+body{
+
+    background-color: #F0E8E3;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 280px;
+    /* grid-template-rows: repeat(6,1fr);
+     */
+    grid-template-rows: repeat(1,0.25fr);
+    }
+    .carousel-caption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-150%);
+        text-align: center;
+    }
+    .carousel-caption h1 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .carousel-caption p {
+        font-size: 0.75rem;
+    }
+}
