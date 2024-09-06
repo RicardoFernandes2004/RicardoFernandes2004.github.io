@@ -6,6 +6,7 @@
     <title>EcoTrend</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         .product-image {
             max-width: 100%;
@@ -20,7 +21,6 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header class="navbar navbar-expand-lg navbar-light" >
         <a class="navbar-brand" href="/index.html">
             <img src="/assets/Mask group.png" alt="Logo">
@@ -32,10 +32,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="paginas/categorias.html">Categorias</a></li>
-                <li class="nav-item"><a class="nav-link" href="paginas/contato.html">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                 <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> </a></li>
-                <img src="/assets/shopping-cart.png" alt="cart" style="width: 30px; height: 30px;">
+                <!-- <img src="assets/shopping-cart.png" alt="cart" style="width: 30px; height: 30px;"> imagem do carrinhho -->
             </ul>
         </div>
     </header>
@@ -44,7 +44,6 @@
 
 
 <div class="container mt-5">
-    <!-- Botão de Voltar -->
     <a href="/paginas/categorias.html" class="btn btn-back mb-3">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
@@ -52,7 +51,6 @@
         Voltar
     </a>
 
-    <!-- Detalhes do Produto -->
     <div class="row">
         <div class="col-md-6">
             <img src="data:image/jpeg;base64,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" style="width: 500px; height:400px" alt="Imagem do Produto" class="product-image">

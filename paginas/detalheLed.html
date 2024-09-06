@@ -6,6 +6,7 @@
     <title>EcoTrend</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         .product-image {
             max-width: 100%;
@@ -20,7 +21,6 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header class="navbar navbar-expand-lg navbar-light" >
         <a class="navbar-brand" href="/index.html">
             <img src="/assets/Mask group.png" alt="Logo">
@@ -35,7 +35,7 @@
                 <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
                 <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                 <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> </a></li>
-                <img src="/assets/shopping-cart.png" alt="cart" style="width: 30px; height: 30px;">
+                <!-- <img src="assets/shopping-cart.png" alt="cart" style="width: 30px; height: 30px;"> imagem do carrinhho -->
             </ul>
         </div>
     </header>
@@ -44,7 +44,6 @@
 
 
 <div class="container mt-5">
-    <!-- Botão de Voltar -->
     <a href="/paginas/categorias.html" class="btn btn-back mb-3">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
@@ -52,7 +51,6 @@
         Voltar
     </a>
 
-    <!-- Detalhes do Produto -->
     <div class="row">
         <div class="col-md-6">
             <img src="data:image/jpeg;base64,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" style="height: 400px; width: 500px" alt="Imagem do Produto" class="product-image">
@@ -60,7 +58,11 @@
         <div class="col-md-6">
             <h1 class="display-4">Luz LED - Marca BrightLite</h1>
             <p class="lead">Preço: R$ 50,00</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula dolor id sapien tincidunt, non facilisis ligula efficitur. Nulla facilisi. Sed fringilla justo nec nisi feugiat, vel gravida est bibendum. Morbi efficitur, nunc et vulputate convallis, odio arcu vehicula metus, ut sollicitudin est justo eu leo. Curabitur non felis eu odio varius vestibulum. Donec vehicula magna at ipsum sagittis, in sagittis neque tincidunt. Pellentesque in tincidunt orci.</p>
+            <p>Ilumine seus ambientes com a luz LED BrightLite, sinônimo de eficiência e economia. Com um design moderno e compacto, essa lâmpada oferece uma luz branca suave, ideal para qualquer ambiente da sua casa ou escritório. Além de proporcionar uma iluminação uniforme, a BrightLite se destaca pelo seu baixo consumo de energia, permitindo até 80% de economia em relação às lâmpadas tradicionais.
+
+                Sua durabilidade é impressionante, com uma vida útil de até 25.000 horas, reduzindo a necessidade de trocas frequentes e contribuindo para um estilo de vida mais sustentável. Seja para leitura, estudo ou simplesmente para criar uma atmosfera confortável, a luz LED BrightLite é a escolha certa para quem valoriza qualidade e eficiência.
+                
+                Faça sua casa brilhar de forma ecológica com a BrightLite, a lâmpada que alia desempenho e economia com respeito ao meio ambiente.</p>
             <button class="btn btn-success btn-lg">Adicionar ao Carrinho</button>
         </div>
     </div>
