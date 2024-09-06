@@ -6,6 +6,7 @@
     <title>EcoTrend</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         .product-image {
             max-width: 100%;
@@ -20,7 +21,6 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header class="navbar navbar-expand-lg navbar-light" >
         <a class="navbar-brand" href="/index.html">
             <img src="/assets/Mask group.png" alt="Logo">
@@ -32,10 +32,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="paginas/categorias.html">Categorias</a></li>
-                <li class="nav-item"><a class="nav-link" href="paginas/contato.html">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                 <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> </a></li>
-                <img src="/assets/shopping-cart.png" alt="cart" style="width: 30px; height: 30px;">
+                <!-- <img src="assets/shopping-cart.png" alt="cart" style="width: 30px; height: 30px;"> imagem do carrinhho -->
             </ul>
         </div>
     </header>
@@ -44,7 +44,6 @@
 
 
 <div class="container mt-5">
-    <!-- Botão de Voltar -->
     <a href="/paginas/categorias.html" class="btn btn-back mb-3">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
@@ -52,7 +51,6 @@
         Voltar
     </a>
 
-    <!-- Detalhes do Produto -->
     <div class="row">
         <div class="col-md-6">
             <img src="data:image/jpeg;base64,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" style="width: 500px; height:400px" alt="Imagem do Produto" class="product-image">

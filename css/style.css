@@ -34,6 +34,7 @@ footer{
     font-weight: bold;
 }
 
+
 footer hr {
     border: 0; 
     height: 4px; 
@@ -134,7 +135,7 @@ form button[type="submit"]:hover {
 .jumbotron {
     position: relative;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white;
     text-align: center;
   }
